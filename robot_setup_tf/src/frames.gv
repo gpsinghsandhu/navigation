@@ -1,0 +1,13 @@
+digraph G {
+"/base_link" -> "/base_laser"[label="Broadcaster: /robot_tf_publisher\nAverage rate: 100.201 Hz\nMost recent transform: 0.003 sec old \nBuffer length: 4.980 sec\n"];
+"/world" -> "/turtle2"[label="Broadcaster: /turtle2_tf_broadcaster\nAverage rate: 62.701 Hz\nMost recent transform: 0.015 sec old \nBuffer length: 4.960 sec\n"];
+"/world" -> "/turtle1"[label="Broadcaster: /turtle1_tf_broadcaster\nAverage rate: 62.701 Hz\nMost recent transform: 0.015 sec old \nBuffer length: 4.960 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1359998712.119"[ shape=plaintext ] ;
+ }->"/base_link";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1359998712.119"[ shape=plaintext ] ;
+ }->"/world";
+}

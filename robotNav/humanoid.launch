@@ -1,0 +1,38 @@
+<launch>
+
+   <arg name="USE_BAGFILE" value="true" /> 
+   <arg name="USE_KINECT" value="false" />
+   <!--param name="USE_BAGFILE" value="1" /-->
+   
+   <group if="$(arg USE_BAGFILE)">
+   
+      <param name="use_sim_time" value="true" />
+      <node pkg="rosbag" type="play" name="rosbag" args="-q -l -r 0.2 $(find robotNav)/odom1.bag --clock" />
+      <include file="$(find openni_launch)/launch/openni.launch" >
+         <arg name="load_driver" value="false" />
+      </include>
+      
+   </group>
+   
+   <group if="$(arg USE_KINECT)">
+   
+      <param name="use_sim_time" value="false" />
+      <include file="$(find openni_launch)/launch/openni.launch" />
+      
+   </group>
+   
+   <include file="$(find robotNav)/simple.launch" />
+      
+   <node name="VisualOdom" pkg="vis_odom" type="visual" />
+      
+   <include file="$(find robotNav)/move_base.launch" />
+   
+   <node name="visulaization" pkg="rviz" type="rviz" args="-d $(find robotNav)/goal.vcg" />
+   
+   <node pkg="costmap_2d_custom" type="costmap_2d_cloud" name="costmap_cloud_visualizer">
+<remap from="voxel_grid" to="costmap_node/costmap/voxel_grid"/>
+   </node>
+   
+</launch>
+
+

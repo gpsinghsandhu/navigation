@@ -1,0 +1,24 @@
+<launch>
+
+   <arg name="USE_KINECT" value="false"/ >
+   <arg name="USE_BAGFILE" value="true" />
+   
+   <group if="$(arg USE_BAGFILE)">
+   
+      <param name="use_sim_time" value="true" />
+      <node pkg="rosbag" type="play" name="rosbag" args="play -q -l -r 0.5 $(find image_view)/test.bag --clock"/>
+      <include file="$(find openni_launch)/launch/openni.launch args="load_driver:=false" />
+      
+   </group>
+   
+   <include file="$(find robotNav)/simple.launch" />
+      
+   <node name="VisualOdom" pkg="vis_odom" type="visual" />
+      
+   <include file="$(find robotNav)/move_base.launch" />
+   
+   <node name="visulaization" pkg="rviz" type="rviz" args="-d $(find robotNav)/goal.vcg" />
+   
+</launch>
+
+

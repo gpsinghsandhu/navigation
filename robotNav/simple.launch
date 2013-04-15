@@ -1,0 +1,10 @@
+<launch>   
+   
+   
+   <node pkg="robot_setup_tf" type="tf_broadcaster" name="robot_tf_publisher" />
+   
+   <node pkg="robot_setup_tf" type="tf_odom_broadcaster" name="odom_tf_publisher" />
+   
+   <!--node pkg="robot_setup_tf" type="tf_odom_broad" name="odometry_publisher" /-->
+   
+</launch>

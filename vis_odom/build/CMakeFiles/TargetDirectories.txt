@@ -1,0 +1,16 @@
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/clean-test-results.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/rosbuild_precompile.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/rosbuild_premsgsrvgen.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/rospack_genmsg.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/rospack_genmsg_libexe.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/rospack_gensrv.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/test.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/test-future.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/test-results.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/test-results-run.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/tests.dir
+/home/guru/ros_workspace/vis_odom/build/CMakeFiles/visual.dir

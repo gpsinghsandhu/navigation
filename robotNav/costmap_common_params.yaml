@@ -1,0 +1,17 @@
+obstacle_range: 6.0
+raytrace_range: 4.0
+footprint: [[0.424264069, 0.424264069], [-0.424264069, 0.424264069],  [-0.424264069, -0.424264069] ,[0.424264069, -0.424264069]]   ## l*b = 0.6 * 0.6  0.424264069
+#robot_radius: ir_of_robot
+inflation_radius: 0.5
+
+static_map: false
+rolling_window: true
+width: 6.0
+height: 6.0
+resolution: 0.1
+
+publish_voxel_map: true
+
+observation_sources: point_cloud_sensor
+
+point_cloud_sensor: {sensor_frame: /camera_rgb_optical_frame, data_type: PointCloud2, topic: /camera/depth/points, marking: true, clearing: true}
