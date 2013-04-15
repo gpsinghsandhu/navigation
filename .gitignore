@@ -1,0 +1,6 @@
+!*.cpp
+!*.launch
+!*.yaml
+!*.txt
+!*.xml
+!*.vcg
