@@ -29,8 +29,6 @@
    
    <node name="visulaization" pkg="rviz" type="rviz" args="-d $(find robotNav)/goal.vcg" />
    
-   <node pkg="costmap_2d_custom" type="costmap_2d_cloud" name="costmap_cloud_visualizer">
-<remap from="voxel_grid" to="costmap_node/costmap/voxel_grid"/>
    </node>
    
 </launch>
